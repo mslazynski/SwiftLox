@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+let io = ConsoleIO()
+let builder = InterpreterBuilder.init(arguments: CommandLine.arguments, io: io)
 
+if case let .success(interpreter) = builder.build() {
+    interpreter.run().ignore()
+} else {
+    io.error(message: builder.help).ignore()
+}

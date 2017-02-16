@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		62E5744B1E4FDD4000F866C8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5744A1E4FDD4000F866C8 /* main.swift */; };
+		62E574A31E54EF6300F866C8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574A21E54EF6300F866C8 /* Result.swift */; };
+		62E574AA1E54F6AC00F866C8 /* InputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574A91E54F6AC00F866C8 /* InputOutput.swift */; };
+		62E574AD1E54FFA800F866C8 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574AC1E54FFA800F866C8 /* ConsoleIO.swift */; };
+		62E574B21E551E3600F866C8 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574B11E551E3600F866C8 /* Interpreter.swift */; };
+		62E574B91E551F5B00F866C8 /* InteractiveInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574B81E551F5B00F866C8 /* InteractiveInterpreter.swift */; };
+		62E574C01E551F7400F866C8 /* ScriptInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574BF1E551F7400F866C8 /* ScriptInterpreter.swift */; };
+		62E574C21E551F8C00F866C8 /* InterpreterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574C11E551F8C00F866C8 /* InterpreterBuilder.swift */; };
+		62E574C41E5520C800F866C8 /* REPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574C31E5520C800F866C8 /* REPL.swift */; };
+		62E574C61E5520D700F866C8 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574C51E5520D700F866C8 /* ScriptRunner.swift */; };
+		62E574C81E55233F00F866C8 /* ScriptReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574C71E55233F00F866C8 /* ScriptReader.swift */; };
+		62E574CD1E55241A00F866C8 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E574CC1E55241A00F866C8 /* FileReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,17 @@
 /* Begin PBXFileReference section */
 		62E574471E4FDD4000F866C8 /* SwiftLox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftLox; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E5744A1E4FDD4000F866C8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		62E574A21E54EF6300F866C8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		62E574A91E54F6AC00F866C8 /* InputOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutput.swift; sourceTree = "<group>"; };
+		62E574AC1E54FFA800F866C8 /* ConsoleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		62E574B11E551E3600F866C8 /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		62E574B81E551F5B00F866C8 /* InteractiveInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveInterpreter.swift; sourceTree = "<group>"; };
+		62E574BF1E551F7400F866C8 /* ScriptInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptInterpreter.swift; sourceTree = "<group>"; };
+		62E574C11E551F8C00F866C8 /* InterpreterBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterBuilder.swift; sourceTree = "<group>"; };
+		62E574C31E5520C800F866C8 /* REPL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REPL.swift; sourceTree = "<group>"; };
+		62E574C51E5520D700F866C8 /* ScriptRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
+		62E574C71E55233F00F866C8 /* ScriptReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptReader.swift; sourceTree = "<group>"; };
+		62E574CC1E55241A00F866C8 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +79,60 @@
 		62E574491E4FDD4000F866C8 /* SwiftLox */ = {
 			isa = PBXGroup;
 			children = (
+				62E574B01E551E3600F866C8 /* Interpreter */,
+				62E574A81E54F6AC00F866C8 /* InputOutput */,
+				62E574A11E54EF5900F866C8 /* Result */,
 				62E5744A1E4FDD4000F866C8 /* main.swift */,
+				62E574C11E551F8C00F866C8 /* InterpreterBuilder.swift */,
+				62E574C31E5520C800F866C8 /* REPL.swift */,
+				62E574C51E5520D700F866C8 /* ScriptRunner.swift */,
 			);
 			path = SwiftLox;
+			sourceTree = "<group>";
+		};
+		62E574A11E54EF5900F866C8 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				62E574A21E54EF6300F866C8 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		62E574A81E54F6AC00F866C8 /* InputOutput */ = {
+			isa = PBXGroup;
+			children = (
+				62E574CB1E55241A00F866C8 /* FileReader */,
+				62E574AB1E54FA3E00F866C8 /* ConsoleIO */,
+				62E574A91E54F6AC00F866C8 /* InputOutput.swift */,
+				62E574C71E55233F00F866C8 /* ScriptReader.swift */,
+			);
+			path = InputOutput;
+			sourceTree = "<group>";
+		};
+		62E574AB1E54FA3E00F866C8 /* ConsoleIO */ = {
+			isa = PBXGroup;
+			children = (
+				62E574AC1E54FFA800F866C8 /* ConsoleIO.swift */,
+			);
+			path = ConsoleIO;
+			sourceTree = "<group>";
+		};
+		62E574B01E551E3600F866C8 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				62E574B11E551E3600F866C8 /* Interpreter.swift */,
+				62E574B81E551F5B00F866C8 /* InteractiveInterpreter.swift */,
+				62E574BF1E551F7400F866C8 /* ScriptInterpreter.swift */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		62E574CB1E55241A00F866C8 /* FileReader */ = {
+			isa = PBXGroup;
+			children = (
+				62E574CC1E55241A00F866C8 /* FileReader.swift */,
+			);
+			path = FileReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E574A31E54EF6300F866C8 /* Result.swift in Sources */,
+				62E574C01E551F7400F866C8 /* ScriptInterpreter.swift in Sources */,
+				62E574C61E5520D700F866C8 /* ScriptRunner.swift in Sources */,
+				62E574AD1E54FFA800F866C8 /* ConsoleIO.swift in Sources */,
+				62E574C81E55233F00F866C8 /* ScriptReader.swift in Sources */,
 				62E5744B1E4FDD4000F866C8 /* main.swift in Sources */,
+				62E574CD1E55241A00F866C8 /* FileReader.swift in Sources */,
+				62E574C41E5520C800F866C8 /* REPL.swift in Sources */,
+				62E574B91E551F5B00F866C8 /* InteractiveInterpreter.swift in Sources */,
+				62E574AA1E54F6AC00F866C8 /* InputOutput.swift in Sources */,
+				62E574C21E551F8C00F866C8 /* InterpreterBuilder.swift in Sources */,
+				62E574B21E551E3600F866C8 /* Interpreter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +337,7 @@
 				62E574501E4FDD4000F866C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
